@@ -24,7 +24,7 @@ RUN pip install --upgrade pip \
     && pip install django
 
 # RUN initial setting.
-COPY initial_settings.sh $HOME/initial_settings.sh
+#COPY initial_settings.sh $HOME/initial_settings.sh
 #RUN chmod 777 $HOME/initial_settings.sh
 #ENV SSH_PUBKEY="furuhashi the test..."
 #RUN $HOME/initial_settings.sh

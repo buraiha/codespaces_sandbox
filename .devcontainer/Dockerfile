@@ -20,3 +20,7 @@ RUN apt update && export DEBIAN_FRONTEND=noninteractive \
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
 RUN pip install --upgrade pip \
     && pip install django
+
+# RUN initial setting.
+RUN mkdir $HOME/.ssh \
+    && echo $SSH_PUBKEY > $HOME/.ssh/id_rsa.pub

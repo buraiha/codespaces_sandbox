@@ -25,5 +25,5 @@ RUN pip install --upgrade pip \
 WORKDIR /home/vscode
 ENV HOME=/home/vscode
 COPY initial_settings.sh .
-RUN chmod +x initial_settings.sh
-ENTRYPOINT ["$HOME/initial_settings.sh"]
+#RUN chmod +x initial_settings.sh
+#ENTRYPOINT ["$HOME/initial_settings.sh"]

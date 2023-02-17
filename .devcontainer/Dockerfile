@@ -27,4 +27,4 @@ RUN pip install --upgrade pip \
 COPY initial_settings.sh $HOME/initial_settings.sh
 RUN chmod +x $HOME/initial_settings.sh
 #ENV SSH_PUBKEY="furuhashi the test..."
-RUN $HOME/initial_settings.sh
+#RUN $HOME/initial_settings.sh

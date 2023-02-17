@@ -24,6 +24,6 @@ RUN pip install --upgrade pip \
     && pip install django
 
 # RUN initial setting.
-#COPY initial_settings.sh $HOME/initial_settings.sh
+COPY initial_settings.sh $HOME/initial_settings.sh
 #RUN chmod +x $HOME/initial_settings.sh
 #RUN $HOME/initial_settings.sh

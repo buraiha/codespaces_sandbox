@@ -22,8 +22,8 @@ RUN pip install --upgrade pip \
     && pip install django
 
 # RUN initial setting.
-WORKDIR /home/vscode
-ENV HOME=/home/vscode
+#WORKDIR /home/vscode
+#ENV HOME=/home/vscode
 #COPY initial_settings.sh .
 #RUN chmod +x initial_settings.sh
 #ENTRYPOINT ["$HOME/initial_settings.sh"]

@@ -2,7 +2,7 @@
 ARG VARIANT=3-bullseye
 FROM python:${VARIANT}
 #WORKDIR /home/vscode
-#ENV HOME=/home/vscode
+ENV HOME=/home/vscode
 
 RUN apt update && export DEBIAN_FRONTEND=noninteractive \
     # Remove imagemagick due to https://security-tracker.debian.org/tracker/CVE-2019-10131

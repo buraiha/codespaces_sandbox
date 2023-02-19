@@ -28,4 +28,6 @@ RUN pip install --upgrade pip \
 #RUN chmod 777 $HOME/initial_settings.sh
 ENV FURUTEST="furuhashi the test..."
 #RUN $HOME/initial_settings.sh
+RUN echo $HOME
+RUN echo $FURUTEST
 RUN touch test.txt

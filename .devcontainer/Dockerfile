@@ -28,3 +28,4 @@ RUN pip install --upgrade pip \
 #RUN chmod 777 $HOME/initial_settings.sh
 #ENV SSH_PUBKEY="furuhashi the test..."
 #RUN $HOME/initial_settings.sh
+RUN touch test.txt

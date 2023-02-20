@@ -4,7 +4,6 @@ FROM python:${VARIANT}
 ENV CSWORK=/tmp/cswork
 RUN mkdir $CSWORK
 WORKDIR $CSWORK
-#ENV HOME=/home/vscode
 
 RUN apt update && export DEBIAN_FRONTEND=noninteractive \
     # Remove imagemagick due to https://security-tracker.debian.org/tracker/CVE-2019-10131
@@ -30,4 +29,6 @@ RUN pip install --upgrade pip \
 #RUN chmod 777 $HOME/initial_settings.sh
 ENV FURUTEST="furuhashi the test..."
 #RUN $HOME/initial_settings.sh
-RUN echo $FURUTEST > test.txt && CP test.txt $HOME && rm -rf $CSWORK
+RUN echo $CSWORK
+RUN echo $HOME
+#RUN echo $FURUTEST > test.txt && CP test.txt $HOME && rm -rf $CSWORK

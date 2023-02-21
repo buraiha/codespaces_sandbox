@@ -31,6 +31,6 @@ ENV FURUTEST="furuhashi the test..."
 #RUN $HOME/initial_settings.sh
 RUN echo $CSWORK
 RUN echo $HOME
-RUN echo $FURUTEST > test.txt 
-#COPY test.txt $HOME
+#RUN echo $FURUTEST > test.txt 
+COPY initial_settings.sh $HOME
 # && rm -rf $CSWORK

@@ -28,6 +28,6 @@ ENV FURUTEST="furuhashi the test..."
 
 WORKDIR /tmp/cswork
 
-RUN echo $FURUTEST > /workspaces/codespaces_sandbox/test.txt
-COPY initial_settings.sh /workspaces/codespaces_sandbox
+RUN echo $FURUTEST > /root/test.txt
+COPY initial_settings.sh /root
 # && rm -rf $CSWORK

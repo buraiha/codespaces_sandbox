@@ -28,9 +28,6 @@ RUN pip install --upgrade pip \
 #COPY initial_settings.sh $HOME/initial_settings.sh
 #RUN chmod 777 $HOME/initial_settings.sh
 ENV FURUTEST="furuhashi the test..."
-#RUN $HOME/initial_settings.sh
-RUN echo $CSWORK
-RUN echo $HOME
 RUN echo $FURUTEST > test.txt 
 COPY initial_settings.sh $HOME
 # && rm -rf $CSWORK

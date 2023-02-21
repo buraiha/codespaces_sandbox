@@ -28,6 +28,6 @@ ENV FURUTEST="furuhashi the test..."
 
 WORKDIR /tmp/cswork
 
-RUN echo $FURUTEST > test.txt 
-COPY initial_settings.sh .
+RUN echo $FURUTEST > /home/vscode/test.txt 
+COPY initial_settings.sh /home/vscode
 # && rm -rf $CSWORK

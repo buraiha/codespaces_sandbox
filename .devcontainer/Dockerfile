@@ -32,5 +32,5 @@ ENV FURUTEST="furuhashi the test..."
 RUN echo $CSWORK
 RUN echo $HOME
 RUN echo $FURUTEST > test.txt 
-COPY test.txt $HOME
+#COPY test.txt $HOME
 # && rm -rf $CSWORK

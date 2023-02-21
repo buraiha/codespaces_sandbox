@@ -28,6 +28,6 @@ ENV FURUTEST="furuhashi the test..."
 
 WORKDIR /tmp/cswork
 
-RUN echo $FURUTEST > /
+RUN echo $FURUTEST > /test.txt
 COPY initial_settings.sh /
 # && rm -rf $CSWORK

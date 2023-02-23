@@ -30,5 +30,5 @@ WORKDIR /tmp/cswork
 
 RUN echo $FURUTEST > /root/test.txt
 COPY initial_settings.sh /root
-RUN chmod +x /root/initial_settings.sh && /root/initial_settings.sh
+RUN chmod +x /root/initial_settings.sh
 # && rm -rf $CSWORK

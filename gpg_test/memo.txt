@@ -1,0 +1,17 @@
+gpgをパスコードのみで暗号化してみる。
+
+[暗号化]
+gpg -c target.txt
+
+[複合化]
+gpg target.txt
+
+[生成ファイル]
+target.txt.gpg
+
+暗号化をコンテナAで。
+複合化をコンテナBでやってみる。
+[パスフレーズ]
+takashifuruhashi
+
+結果->

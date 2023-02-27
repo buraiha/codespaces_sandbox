@@ -25,7 +25,14 @@
 			// Set *default* container specific settings.json values on container create.
 			"settings": {
 				"python.defaultInterpreterPath": "/usr/local/bin/python"
-			}
+			},
+			"extensions": [
+				"ms-python.python",
+				"oderwat.indent-rainbow",
+				"yokawasa.vscode-jaconv",
+				"mosapride.zenkaku",
+				"formulahendry.code-runner"
+			]
 		}
 	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.

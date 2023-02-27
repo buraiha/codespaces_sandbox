@@ -29,9 +29,9 @@
 			"extensions": [
 				"ms-python.python",
 				"oderwat.indent-rainbow",
-//				"yokawasa.vscode-jaconv",
-//				"mosapride.zenkaku",
-//				"formulahendry.code-runner"
+				"yokawasa.vscode-jaconv",
+				"mosapride.zenkaku",
+				"formulahendry.code-runner"
 			]
 		}
 	},

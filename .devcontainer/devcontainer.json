@@ -43,6 +43,6 @@
 	"remoteUser": "vscode",
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "/tmp/cs_work/initial_settings.sh"
+	"postCreateCommand": "/root/tmp/initial_settings.sh"
 
 }

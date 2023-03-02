@@ -25,6 +25,6 @@ RUN pip install --upgrade pip \
 WORKDIR /root/tmp/
 #RUN chmod 777 /root/tmp
 COPY initial_settings.sh /root/tmp
-RUN chmod +x /root/tmp/initial_settings.sh
+RUN chmod +x /root/tmp/initial_settings.sh && chown vscode:vscode /root/tmp/initial_settings.sh
 COPY ./ssh/id_rsa.gpg /root/tmp
 COPY ./ssh/id_rsa.pub /root/tmp

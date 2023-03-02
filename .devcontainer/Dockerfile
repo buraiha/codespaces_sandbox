@@ -22,8 +22,8 @@ RUN pip install --upgrade pip \
     && pip install django
 
 # RUN initial setting.
-WORKDIR /root/tmp
-COPY initial_settings.sh /
-RUN chmod +x /initial_settings.sh
-COPY ./ssh/id_rsa.gpg .
-COPY ./ssh/id_rsa.pub .
+WORKDIR /tmp/cs_work
+COPY initial_settings.sh /tmp/cs_work
+RUN chmod +x /tmp/cs_work/initial_settings.sh
+COPY ./ssh/id_rsa.gpg /tmp/cs_work
+COPY ./ssh/id_rsa.pub /tmp/cs_work

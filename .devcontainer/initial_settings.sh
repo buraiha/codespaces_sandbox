@@ -11,6 +11,7 @@ mv /cs_work/config /home/vscode/.ssh/config
 /bin/chown vscode:vscode /home/vscode/.ssh/id_rsa
 /bin/chmod 400 /home/vscode/.ssh/id_rsa
 /bin/chown vscode:vscode /home/vscode/.ssh/id_rsa.pub
-/bin/chmod 644 /home/vscode/.ssh/id_rsa.pub
+/bin/chmod 400 /home/vscode/.ssh/id_rsa.pub
+/bin/chmod 600 /home/vscode/.ssh/config
 
 echo "initial_settings.sh is done."

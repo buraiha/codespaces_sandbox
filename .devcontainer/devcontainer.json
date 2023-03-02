@@ -31,7 +31,8 @@
 				"oderwat.indent-rainbow",
 				"yokawasa.vscode-jaconv",
 				"mosapride.zenkaku",
-				"formulahendry.code-runner"
+				"formulahendry.code-runner",
+				"mhutchie.git-graph"
 			]
 		}
 	},

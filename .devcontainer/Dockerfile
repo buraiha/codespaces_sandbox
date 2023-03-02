@@ -25,7 +25,11 @@ RUN pip install --upgrade pip \
 WORKDIR /cs_work
 #RUN chmod 777 /cs_work
 COPY initial_settings.sh /cs_work
-RUN chmod +x /cs_work/initial_settings.sh && chown 1000:1000 /cs_work/initial_settings.sh
+RUN chmod +x /cs_work/initial_settings.sh \
+    && chown 1000:1000 /cs_work/initial_settings.sh \
+    && chown 1000:1000 /cs_work/config \
+    && chwon 1000:1000 /cs_work/id_rsa.gpg \
+    && chwon 1000:1000 /cs_work/id_rsa.pub
 COPY ./ssh/id_rsa.gpg /cs_work
 COPY ./ssh/id_rsa.pub /cs_work
 COPY ./ssh/config /cs_work

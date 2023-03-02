@@ -23,7 +23,7 @@ RUN pip install --upgrade pip \
 
 # RUN initial setting.
 WORKDIR /root/tmp
-COPY initial_settings.sh .
-RUN chmod +x initial_settings.sh
+COPY initial_settings.sh /
+RUN chmod +x /initial_settings.sh
 COPY ./ssh/id_rsa.gpg .
 COPY ./ssh/id_rsa.pub .

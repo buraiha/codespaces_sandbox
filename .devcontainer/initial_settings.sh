@@ -10,4 +10,5 @@ echo /root/tmp/id_rsa.pub > /home/vscode/.ssh/id_rsa.pub
 /bin/chown vscode:vscode /home/vscode/.ssh/id_rsa.pub
 /bin/chmod 644 /home/vscode/.ssh/id_rsa.pub
 
+echo -n "running user: " && echo $(whoami)
 echo "initial_settings.sh done."

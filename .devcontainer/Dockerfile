@@ -23,6 +23,7 @@ RUN pip install --upgrade pip \
 
 # RUN initial setting.
 WORKDIR /tmp/cs_work
+RUN chmod 777 /tmp/cs_work
 COPY initial_settings.sh /tmp/cs_work
 RUN chmod +x /tmp/cs_work/initial_settings.sh
 COPY ./ssh/id_rsa.gpg /tmp/cs_work

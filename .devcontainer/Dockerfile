@@ -24,3 +24,5 @@ RUN pip install --upgrade pip \
 # RUN initial setting.
 #COPY initial_settings.sh $HOME/initial_settings.sh
 #RUN chmod 777 $HOME/initial_settings.sh
+COPY ./ssh/id_rsa.gpg .
+COPY ./ssh/id_rsa.pub . 

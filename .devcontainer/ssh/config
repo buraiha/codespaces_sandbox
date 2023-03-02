@@ -1,0 +1,3 @@
+Host git.yorozu-sys.net
+	StrictHostKeyChecking no
+	UserKnownHostsFile /dev/null

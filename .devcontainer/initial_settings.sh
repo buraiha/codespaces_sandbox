@@ -2,7 +2,7 @@
 echo -n "Starting initial_settings.sh. running user: " && echo $(whoami)
 mkdir /home/vscode/.ssh
 
-#githubのcodespace secretにSSH_PUBKEYを定義しておくこと。
+#githubのcodespace secretにdecode用のGPG_PASSPHRASEを定義しておくこと。
 /usr/bin/gpg -d --batch --passphrase=$GPG_PASSPHRASE /cs_work/id_rsa.gpg > /home/vscode/.ssh/id_rsa
 rm /cs_work/id_rsa.gpg
 mv /cs_work/id_rsa.pub /home/vscode/.ssh/id_rsa.pub

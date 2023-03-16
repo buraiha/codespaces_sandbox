@@ -2,7 +2,7 @@
 echo -n "Starting initial_settings.sh. running user: " && echo $(whoami)
 mkdir /home/vscode/.ssh
 
-# 本コンテナで使うssh鍵ペアの復号処理。
+# 本コンテナで使うssh鍵ペアの復号&設置処理。
 # 本コンテナから外部サーバ等へssh突する場合に必要。
 # ssh秘密鍵はあらかじめpassphrase付きgpgで暗号化して.devcontainerに格納しておく。
 # passphraseはgithubのcodespace secretにdecode用のGPG_PASSPHRASEとしてを定義しておくこと。

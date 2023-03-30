@@ -23,8 +23,8 @@ RUN pip install --upgrade pip \
 
 # RUN initial setting.
 WORKDIR /cs_work
-#RUN chmod 777 /cs_work
 COPY initial_settings.sh /cs_work
+# ユーザID 1000がvscodeにDocker生成後に成り代わる。
 RUN chown 1000:1000 /cs_work
 COPY ./ssh/id_rsa.gpg /cs_work
 COPY ./ssh/id_rsa.pub /cs_work
